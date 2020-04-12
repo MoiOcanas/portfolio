@@ -52,12 +52,8 @@
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("/dist/img/profile.PNG");
-      background-position-x: center;
-      border-radius: 50%; }
+    .menu-branding h1 {
+      font-size: 5vw; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0); }
     .menu .nav-item.show {
@@ -249,7 +245,8 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      margin-top: 2rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -278,8 +275,11 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2rem;
+    min-height: calc(100vh - 60px); }
+    main #home h1 {
+      margin-top: 10vh; }
   .lg-heading {
     font-size: 4rem !important; }
   .projects {
