@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,7 +12,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Mukta', sans-serif;
     line-height: 1.5;
 }
 
@@ -27,12 +28,13 @@ h1, h2, h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding:  0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        color: $primary-color;
+        background: rgba(lighten($secondary-color, 2), 0.8);
     }
 }
 
 a {
-    color: #fff;
+    color: rgba(lighten($secondary-color, 2), 0.8);;
     text-decoration: none;
 }
 
@@ -48,7 +50,6 @@ header {
 
 main {
     padding: 4rem;
-    // height: 100%;
     min-height: calc(100vh - 60px);
 
     .icons {
@@ -72,7 +73,7 @@ main {
     }
 }
 
-.about-info {
+.experience-info {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
@@ -83,8 +84,8 @@ main {
     .bio-image {
         grid-area: bioimage;
         margin: auto;
+        width: 200px;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
     }
     
     .bio {
@@ -106,8 +107,10 @@ main {
     
     .job {
         background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        padding: 1rem;
+        border-radius: 1em;
+        color: $third-color;
+        font-size: 1rem;
     }
 }
 
@@ -116,6 +119,14 @@ main {
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
+
+    .item {
+        background: lighten($primary-color, 5);
+        padding: 1rem;
+        border-radius: 1em;
+        color: $third-color;
+        font-size: 1rem;
+    }
 
     img {
         width: 100%;
@@ -139,46 +150,36 @@ main {
 
     div {
         font-size: 2rem;
-        border: 3px #fff solid;
+        border: 3px solid rgba(lighten($secondary-color, 2), 0.8);;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
+        border-radius: 1rem;
         @include easeOut;
-
-        &:hover {
-            padding: 0.5rem 1.5rem;
-            background: $secondary-color;
-            color: set-text-color($secondary-color);
-
-            span {
-                color: set-text-color($primary-color);
-            }
-        }
     }
 }
 
 //Button styles 
 .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px 5px;
+    background-color: #fff;
+    color: $third-color;
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 8px 38px;
+    font-size: 14px;
+    cursor: pointer;
+}
 
+.btn-blue {
+    @extend .btn;
+    border: 2px solid rgba(lighten($secondary-color, 2), 0.8);
     &:hover {
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
+        background: rgba(lighten($secondary-color, 2), 0.8);
+        color: #ffffff;
     }
-}
-
-.btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: #fff;
-}
-
-.btn-light {
-    @extend .btn;
-    background: lighten($primary-color, 50);
-    color: #333; 
 }
 
 #main-footer {

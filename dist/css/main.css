@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -9,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #333;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -24,7 +25,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #343838;
+    background: #ececec;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #404545;
+    background: #f9f9f9;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -55,16 +55,15 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../dist/img/portrait.jpg");
-      border-radius: 50%;
-      border: solid 3px #42D7D9; }
+      background: url("/dist/img/profile.PNG");
+      background-position-x: center;
+      border-radius: 50%; }
   .menu .nav-item {
-    transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transform: translate3d(600px, 0, 0); }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #42D7D9; }
+      color: #1C2D57; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -72,11 +71,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 250;
-    color: #fff;
+    color: #333;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #42D7D9; }
+      color: #1C2D57; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -94,11 +93,11 @@
   box-sizing: border-box; }
 
 body {
-  background: #404545;
-  color: #fff;
+  background: #f9f9f9;
+  color: #333;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Mukta', sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../dist/img/background.jpg);
@@ -112,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(64, 69, 69, 0.9); }
+      background: rgba(249, 249, 249, 0.9); }
 
 h1, h2, h3 {
   margin: 0;
@@ -122,10 +121,11 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(69, 74, 74, 0.5); }
+    color: #f9f9f9;
+    background: rgba(30, 49, 95, 0.8); }
 
 a {
-  color: #fff;
+  color: rgba(30, 49, 95, 0.8);
   text-decoration: none; }
 
 header {
@@ -134,7 +134,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #42D7D9; }
+  color: #1C2D57; }
 
 main {
   padding: 4rem;
@@ -144,47 +144,55 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #42D7D9;
+        color: #1C2D57;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
 
-.about-info {
+.experience-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
+  .experience-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: #42D7D9 3px solid; }
-  .about-info .bio {
+    width: 200px;
+    border-radius: 50%; }
+  .experience-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
+  .experience-info .job-1 {
     grid-area: job1; }
-  .about-info .job-2 {
+  .experience-info .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
+  .experience-info .job-3 {
     grid-area: job3; }
-  .about-info .job {
-    background: #4c5252;
-    padding: 0.5rem;
-    border-bottom: #42D7D9 5px solid; }
+  .experience-info .job {
+    background: white;
+    padding: 1rem;
+    border-radius: 1em;
+    color: #333;
+    font-size: 1rem; }
 
 .projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
+  .projects .item {
+    background: white;
+    padding: 1rem;
+    border-radius: 1em;
+    color: #333;
+    font-size: 1rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #42D7D9;
+      border-color: #1C2D57;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -195,39 +203,36 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px #fff solid;
+    border: 3px solid rgba(30, 49, 95, 0.8);
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    border-radius: 1rem;
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #42D7D9;
-      color: #000; }
-      .boxes div:hover span {
-        color: #fff; }
 
-.btn, .btn-dark, .btn-light {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #42D7D9;
-    color: #000; }
+.btn, .btn-blue {
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 10px 5px;
+  background-color: #fff;
+  color: #333;
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 8px 38px;
+  font-size: 14px;
+  cursor: pointer; }
 
-.btn-dark {
-  background: black;
-  color: #fff; }
-
-.btn-light {
-  background: #c0c4c4;
-  color: #333; }
+.btn-blue {
+  border: 2px solid rgba(30, 49, 95, 0.8); }
+  .btn-blue:hover {
+    background: rgba(30, 49, 95, 0.8);
+    color: #ffffff; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #272b2b;
-  color: #fff;
+  background: #e0e0e0;
+  color: #333;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
@@ -261,10 +266,12 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../dist/img/portrait_small.jpg");
+      background-image: url("/dist/img/profile.PNG");
+      background-size: contain;
+      background-position-x: center;
       width: 150px;
       height: 150px; }
-  .about-info {
+  .experience-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
@@ -273,5 +280,7 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  .lg-heading {
+    font-size: 4rem !important; }
   .projects {
     grid-template-columns: 1fr; } }

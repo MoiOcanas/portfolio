@@ -46,13 +46,15 @@
         transform: translate3d(100%, 0, 0);
 
         .portrait {
-            background: url('../dist/img/portrait_small.jpg');
+            background-image: url('/dist/img/profile.PNG');
+            background-size: contain;
+            background-position-x: center;
             width: 150px;
             height: 150px;
         }
     }
 
-    .about-info {
+    .experience-info {
         grid-template-areas: 
         'bioimage'
         'bio'
@@ -72,6 +74,10 @@
 @include mediaSm {
     main#home h1 {
         margin-top: 10vh;
+    }
+
+    .lg-heading {
+        font-size: 4rem !important;
     }
 
     .projects {
