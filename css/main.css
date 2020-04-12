@@ -53,7 +53,7 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding h1 {
-      font-size: 5vw; }
+      font-size: 5em; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0); }
     .menu .nav-item.show {
@@ -252,6 +252,9 @@ main {
     float: none;
     width: 100%;
     min-height: 0; }
+    ul.menu-nav h1,
+    div.menu-branding h1 {
+      font-size: 5em; }
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
@@ -280,6 +283,8 @@ main {
     min-height: calc(100vh - 60px); }
     main #home h1 {
       margin-top: 10vh; }
+  div.menu-branding h1 {
+    font-size: 3rem; }
   .lg-heading {
     font-size: 4rem !important; }
   .projects {
