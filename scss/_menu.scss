@@ -86,12 +86,8 @@
             transform: translate3d(0,0,0);
         }
 
-        .portrait {
-            width: 250px;
-            height: 250px;
-            background: url("/dist/img/profile.PNG");
-            background-position-x: center;
-            border-radius: 50%;
+        h1 {
+            font-size: 5vw;
         }
     }
 
