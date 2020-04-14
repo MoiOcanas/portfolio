@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -107,18 +108,13 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(249, 249, 249, 0.9); }
+      background: #f9f9f9; }
 
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    color: #f9f9f9;
-    background: rgba(30, 49, 95, 0.8); }
 
 a {
   color: rgba(30, 49, 95, 0.8);
@@ -145,7 +141,38 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 20vh;
+      color: #f9f9f9; }
+
+.home {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 !important; }
+  .home .home-section-1,
+  .home .home-section-2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .home .home-section-1 {
+    justify-content: center; }
+  .home .home-section-2 {
+    background-color: #383838;
+    color: #f9f9f9;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2em; }
+    .home .home-section-2 #typedtext {
+      font-size: 1.5em;
+      font-family: 'Source Code Pro', monospace; }
+      .home .home-section-2 #typedtext span:nth-of-type(1) {
+        color: #0C75B6; }
+      .home .home-section-2 #typedtext span:nth-of-type(2) {
+        color: #BF00B6; }
 
 .experience-info {
   display: grid;
@@ -247,6 +274,23 @@ main {
       line-height: 1;
       margin-bottom: 1rem;
       margin-top: 2rem; }
+  .home {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 !important; }
+    .home .home-section-1,
+    .home .home-section-2 {
+      float: none;
+      width: 100%;
+      min-height: 0; }
+    .home .home-section-1 {
+      height: 25vh; }
+    .home .home-section-2 {
+      height: 75vh;
+      text-align: left; }
+      .home .home-section-2 #typedtext {
+        font-size: 1em; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
