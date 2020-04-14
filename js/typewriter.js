@@ -4,10 +4,19 @@ var aText = new Array(
     `"a frontend developer",`,
     `"based in Mexico",`,
     `"i drink lot of cofee",`,
-    `"and build beautiful websites",`,
-    `];`
+    `"and build websites",`,
+    `];`,
+    ``,
+    ``,
+    `<span>if</span>(<span>you want to know about my experience && my projects</span>) {`,
+    `please check the menu`,
+    `}`,
+    ``,
+    `cheers!`
 );
-var iSpeed = 100;
+
+
+var iSpeed = 50;
 var iIndex = 0;
 var iArrLength = aText[0].length;
 var iScrollAt = 20;
@@ -36,3 +45,24 @@ function typewriter() {
         setTimeout("typewriter()", iSpeed);
     }
 }
+
+// function typewriter2() {
+//     sContents = ' ';
+//     iRow = Math.max(0, iIndex - iScrollAt);
+//     var destination = document.getElementById("typedtext2");
+
+//     while (iRow < iIndex) {
+//         sContents += aText2[iRow++] + '<br />';
+//     }
+//     destination.innerHTML = sContents + aText2[iIndex].substring(0, iTextPos) + "_";
+//     if (iTextPos++ == iArrLength) {
+//         iTextPos = 0;
+//         iIndex++;
+//         if (iIndex != aText2.length) {
+//             iArrLength = aText2[iIndex].length;
+//             setTimeout("typewriter2()", 500);
+//         }
+//     } else {
+//         setTimeout("typewriter2()", iSpeed);
+//     }
+// }
