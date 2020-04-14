@@ -1,10 +1,11 @@
 $primary-color: #f9f9f9;
 $secondary-color: #1C2D57;
 $third-color: #333;
+$fouth-color: #f9f9f9;
 
 $show-home-image: true;
 $home-image: url(../dist/img/background.jpg);
-$background-opacity: 0.9;
+$background-opacity: 1;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;

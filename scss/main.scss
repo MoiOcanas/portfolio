@@ -1,6 +1,7 @@
 @import 'config';
 @import 'menu';
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
     box-sizing: border-box;
@@ -23,13 +24,6 @@ h1, h2, h3 {
 
     &.lg-heading {
         font-size: 6rem;
-    }
-
-    &.sm-heading {
-        margin-bottom: 2rem;
-        padding:  0.2rem 1rem;
-        color: $primary-color;
-        background: rgba(lighten($secondary-color, 2), 0.8);
     }
 }
 
@@ -69,6 +63,50 @@ main {
         overflow: hidden;
         h1 {
             margin-top: 20vh;
+            color: $fouth-color;
+        }
+    }
+}
+
+.home {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 !important;
+
+    .home-section-1, 
+    .home-section-2 {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .home-section-1 {
+        justify-content: center;
+    }
+
+    .home-section-2 {
+        background-color: #383838;
+        color: #f9f9f9;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2em;
+
+        #typedtext {
+            font-size: 1.5em;
+            font-family: 'Source Code Pro', monospace;
+
+            span:nth-of-type(1) {
+                color: #0C75B6;
+            }
+
+            span:nth-of-type(2) {
+                color: #BF00B6;
+            }
         }
     }
 }

@@ -25,6 +25,32 @@
         }
     }
 
+    .home {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0 !important;
+    
+        .home-section-1, 
+        .home-section-2 {
+            float: none;
+            width: 100%;
+            min-height: 0;
+        }
+    
+        .home-section-1 {
+            height: 25vh;
+        }
+    
+        .home-section-2 {
+            height: 75vh;
+            text-align: left;
+            #typedtext {
+                font-size: 1em;
+            }
+        }
+    }
+
     ul.menu-nav, 
     div.menu-branding {
         float: none;
