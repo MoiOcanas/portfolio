@@ -11,12 +11,12 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #333;
+    background-color: #0C75B6;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line {
-      background: #333; }
+      background: #0C75B6; }
       .menu-btn.close .btn-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px); }
       .menu-btn.close .btn-line:nth-child(2) {
@@ -293,9 +293,9 @@ main {
       width: 100%;
       min-height: 0; }
     .home .home-section-1 {
-      height: 35vh; }
+      height: 25vh; }
     .home .home-section-2 {
-      height: 65vh;
+      height: 75vh;
       text-align: left; }
       .home .home-section-2 #typedtext {
         font-size: 1em; }
@@ -337,6 +337,11 @@ main {
     min-height: calc(100vh - 60px); }
     main #home h1 {
       margin-top: 10vh; }
+  .boxes div {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem; }
   div.menu-branding h1 {
     font-size: 3rem; }
   .lg-heading {
