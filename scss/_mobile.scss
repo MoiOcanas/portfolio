@@ -39,11 +39,11 @@
         }
     
         .home-section-1 {
-            height: 25vh;
+            height: 35vh;
         }
     
         .home-section-2 {
-            height: 75vh;
+            height: 65vh;
             text-align: left;
             #typedtext {
                 font-size: 1em;
@@ -85,6 +85,12 @@
         }
     }
 
+    .menu-btn {
+        .btn-line {
+            background-color: $third-color;
+        }
+    }
+
     .experience-info {
         grid-template-areas: 
         'bioimage'
@@ -119,7 +125,7 @@
     }
 
     .lg-heading {
-        font-size: 4rem !important;
+        font-size: 3rem !important;
     }
 
     .projects {

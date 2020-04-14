@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
@@ -13,7 +13,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
     line-height: 1.5;
 }
 
@@ -23,7 +23,7 @@ h1, h2, h3 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 }
 
@@ -105,7 +105,15 @@ main {
             }
 
             span:nth-of-type(2) {
-                color: #BF00B6;
+                color: $programming-pink;
+            }
+
+            span:nth-of-type(3) {
+                color: $programming-pink;
+            }
+
+            span:nth-of-type(4) {
+                color: #51DAE3;
             }
         }
     }
@@ -114,6 +122,7 @@ main {
 .experience-info {
     display: grid;
     grid-gap: 30px;
+    margin-top: 2em;
     grid-template-areas:
     'bioimage bio bio'
     'job1 job2 job3';
@@ -155,6 +164,7 @@ main {
 //Work/Projects
 .projects {
     display: grid;
+    margin-top: 2em;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
 
