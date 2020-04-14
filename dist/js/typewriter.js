@@ -8,7 +8,7 @@ var aText = new Array(
     `];`,
     ``,
     ``,
-    `<span>if</span>(<span>you want to know about my experience && my projects</span>) {`,
+    `<span>if</span>(<span>you want to know about my work experience && projects</span>) {`,
     `please check the menu`,
     `}`,
     ``,
@@ -16,7 +16,7 @@ var aText = new Array(
 );
 
 
-var iSpeed = 40;
+var iSpeed = 25;
 var iIndex = 0;
 var iArrLength = aText[0].length;
 var iScrollAt = 20;
