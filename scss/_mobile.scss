@@ -1,141 +1,138 @@
-// Widescreens
 @include mediaXL {
     .projects {
-        grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
-}
-
-// Desktops
-@include mediaLg {
+  }
+  
+  @include mediaLg {
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
-
-// Tablets
-@include mediaMd {
+  }
+  
+  @include mediaMd {
     main {
-        align-items: center;
-        text-align: center;
-
-        .lg-heading {
-            line-height: 1;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-        }
+      align-items: center;
+      text-align: center;
+  
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      }
     }
-
+  
     .home {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        padding: 0 !important;
-    
-        .home-section-1, 
-        .home-section-2 {
-            float: none;
-            width: 100%;
-            min-height: 0;
-        }
-    
-        .home-section-1 {
-            height: 25vh;
-        }
-    
-        .home-section-2 {
-            height: 75vh;
-            text-align: left;
-            #typedtext {
-                font-size: 1em;
-            }
-        }
-    }
-
-    ul.menu-nav, 
-    div.menu-branding {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 0 !important;
+  
+      .home-section-1,
+      .home-section-2 {
         float: none;
         width: 100%;
         min-height: 0;
-
-        h1 {
-            font-size: 5em;
-        }
-
-        &.show {
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    .menu-nav {
-        height: 75vh;
-        transform: translate3d(-100%, 0, 0);
-        font-size: 24px;
-    }
-
-    .menu-branding {
+      }
+  
+      .home-section-1 {
         height: 25vh;
-        transform: translate3d(100%, 0, 0);
-
-        .portrait {
-            background-image: url('/dist/img/profile.PNG');
-            background-size: contain;
-            background-position-x: center;
-            width: 150px;
-            height: 150px;
+      }
+  
+      .home-section-2 {
+        height: 75vh;
+        text-align: left;
+        #typedtext {
+          font-size: 1em;
         }
+      }
     }
-
-    .menu-btn {
-        .btn-line {
-            background-color: $third-color;
-        }
-    }
-
-    .experience-info {
-        grid-template-areas: 
-        'bioimage'
-        'bio'
-        'job1'
-        'job2'
-        'job3';
-
-        grid-template-columns: 1fr;
-    }
-
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-// Smartphones
-@include mediaSm {
-    main {
-        padding: 2rem;
-        min-height: calc(100vh - 60px);
-
-        #home h1 {
-            margin-top: 10vh;
-        }
-    }
-
-    .boxes div {
-        font-size: 1rem;
-        padding: 1rem 1.5rem;
-        margin-bottom: 1rem;
-        border-radius: 1rem;
-    }
-
+  
+    ul.menu-nav,
     div.menu-branding {
-        h1 {
-            font-size: 3rem;
-        }
+      float: none;
+      width: 100%;
+      min-height: 0;
+  
+      h1 {
+        font-size: 5em;
+      }
+  
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
     }
-
-    .lg-heading {
-        font-size: 3rem !important;
+  
+    .menu-nav {
+      height: 75vh;
+      transform: translate3d(-100%, 0, 0);
+      font-size: 24px;
     }
-
+  
+    .menu-branding {
+      height: 25vh;
+      transform: translate3d(100%, 0, 0);
+  
+      .portrait {
+        background-image: url("/dist/img/profile.PNG");
+        background-size: contain;
+        background-position-x: center;
+        width: 150px;
+        height: 150px;
+      }
+    }
+  
+    .menu-btn {
+      .btn-line {
+        background-color: $third-color;
+      }
+    }
+  
+    .experience-info {
+      grid-template-areas:
+        "bioimage"
+        "bio"
+        "job1"
+        "job2"
+        "job3";
+  
+      grid-template-columns: 1fr;
+    }
+  
     .projects {
-        grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
-}
+  }
+  
+  @include mediaSm {
+    main {
+      padding: 2rem;
+      min-height: calc(100vh - 60px);
+  
+      #home h1 {
+        margin-top: 10vh;
+      }
+    }
+  
+    .boxes div {
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+    }
+  
+    div.menu-branding {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  
+    .lg-heading {
+      font-size: 3rem !important;
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+  
